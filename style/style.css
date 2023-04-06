@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+}
+
+h1 {
+  color: #F3F3F3;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 27px;
+  font-family: "Gruppo", cursive;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 60px;
+}
+.box__input {
+  background: none;
+  height: 40px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
+.box__input::-webkit-input-placeholder {
+  color: #fff;
+}
+.box__input::-moz-placeholder {
+  color: #fff;
+}
+.box__input:-ms-input-placeholder {
+  color: #fff;
+}
+.box__input::-ms-input-placeholder {
+  color: #fff;
+}
+.box__input::placeholder {
+  color: #fff;
+}
+.box__input:hover {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  background-color: #fff;
+}
+.box__input:hover::-webkit-input-placeholder {
+  color: black;
+}
+.box__input:hover::-moz-placeholder {
+  color: black;
+}
+.box__input:hover:-ms-input-placeholder {
+  color: black;
+}
+.box__input:hover::-ms-input-placeholder {
+  color: black;
+}
+.box__input:hover::placeholder {
+  color: black;
+}
+.box__btn {
+  color: #fff;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  font-family: "Gruppo", cursive;
+  font-weight: bolder;
+  font-size: 17px;
+  background: none;
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+.box__btn:hover {
+  background-color: #fff;
+  color: black;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.listBox {
+  width: 60%;
+  font-family: "Gruppo", cursive;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.listBox li {
+  color: black;
+  background: rgb(255, 191, 253);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  font-size: 17px;
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-radius: 7px;
+}
+.listBox .img {
+  width: 90px;
+  height: 70px;
+  display: block;
+  border-radius: 50%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.listBox .img:hover {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+}
+.listBox button {
+  width: 50px;
+  height: 40px;
+  font-family: "Gruppo", cursive;
+  font-weight: bolder;
+  font-size: 17px;
+  cursor: pointer;
+  background: transparent;
+  -o-border-image: linear-gradient(45deg, purple, rgb(114, 117, 214)) 1;
+     border-image: linear-gradient(45deg, purple, rgb(114, 117, 214)) 1;
+  border-radius: 16px;
+}
+
+.modal {
+  margin: 0 auto;
+  position: fixed;
+  top: 20%;
+  width: 95%;
+  left: 3%;
+  height: 150px;
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  border-radius: 19px;
+  display: none;
+}
+.modal h2 {
+  text-align: center;
+  font-family: "Gruppo", cursive;
+}
+.modal__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+}
+.modal__nav input {
+  padding: 10px;
+}
+.modal__boxbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.modal__boxbtn button {
+  color: #fff;
+  width: 70px;
+  background: transparent;
+  -o-border-image: linear-gradient(45deg, purple, rgb(114, 117, 214)) 1;
+     border-image: linear-gradient(45deg, purple, rgb(114, 117, 214)) 1;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 360px) {
+  .container {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  .box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .listBox {
+    width: 86%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .listBox .img {
+    width: 200px;
+    height: 145px;
+  }
+  li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .modal {
+    height: 60%;
+    width: 90%;
+  }
+  .modal__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .modal__boxbtn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .modal__boxbtn button {
+    height: 30px;
+  }
+}

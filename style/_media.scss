@@ -1,0 +1,37 @@
+@media (max-width:360px) {
+
+  .container{
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  
+      .box{
+    flex-wrap: wrap;
+  }
+  .listBox{
+    width: 86%;
+  flex-wrap: wrap  ;
+  .img{
+width: 200px;
+height: 145px;
+  }
+  }
+li{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .modal{
+    height: 60%;
+    width: 90%;
+    &__nav{
+      flex-direction: column;
+      gap: 30px;
+    }
+    &__boxbtn{
+      justify-content: center;
+      button{
+        height: 30px;
+      }
+    }
+  }
+  }

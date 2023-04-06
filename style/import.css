@@ -1,0 +1,15 @@
+@media (max-width: 360px) {
+  .container {
+    margin: 0 auto;
+    max-width: 300px;
+    background-color: black;
+  }
+  body {
+    background-color: green;
+  }
+}
+
+.listBox {
+  background-color: 0;
+}
+/*# sourceMappingURL=import.css.map */
